@@ -3,6 +3,8 @@ Twister
 
 ねじれ天国( http://nejiten.wkeya.com/index.cgi )用のユーザースクリプトです。
 
+**現在 chrome では上手く動きません。。しばしお待ちを。**
+
 機能
 ---------
 
