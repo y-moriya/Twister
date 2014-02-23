@@ -8,22 +8,60 @@
 // @copyright   2014+ Yu MORIYA
 // ==/UserScript==
 
-(function main($) {
+(function twister($) {
 	var uri = GM_info.script.matches[0].replace('*', '');
-	var docs = GM_getValue('docs');
-	if (docs == null) {
+	
+	var raw = GM_getValue('docs_raw');
+	if (raw == null) {
 		var docsUri = uri + '?cmd=doc';
-		alert('loading...');
+		alert('説明書をロードします。しばらくお待ちください。');
 		$.get(docsUri)
 			.done(function(data) {
-				alert('done.')
-				docs = data;
-				GM_setValue('docs', docs);
-				main($);
+				raw = data;
+				GM_setValue('docs_raw', raw);
+				alert('ロードが完了しました。')
+				twister($);
+				return;
 			});
 	} else {
-		alert('loaded.');
-		//GM_deleteValue('docs');
+		showVersion();
+		parseDocs(raw);
+		var s = GM_getValue('docs');
+		s.forEach(function(e) {
+			//alert(e);
+		});
+	}
+	
+	function showVersion() {
+		var sName = GM_info.script.name;
+		var version = GM_info.script.version;
+		var verHtml = $('<div>using ' + sName + ' ver. ' + version + '</div>')
+						.css('text-align', 'right')
+						.click(function() {
+				 			alert('説明書を再取得します。');
+				 			GM_deleteValue('docs_raw');
+				 			$(this).remove();
+				 			twister($);
+				 		});
+		$('body').prepend(verHtml);
+	}
+	
+	function parseDocs(raw) {
+		var skills = [];
+		$(raw)
+			.find('a.large_doc')
+			.filter(function() { return this.name.match(/^[0-9]+$/);})
+			.each(function() {
+				var obj = $(this);
+				var n = obj.text();
+				var p = obj.parent();
+				p.find('a').remove();
+				p = $(p.html().replace(/<table(\n|.)+/, ''));
+				var d = $.trim(p.text());
+				var html = "<div><h3>" + n + "</h3><p>" + d + "</p></div>";
+				skills.push(html);
+			});
+		GM_setValue('docs', skills);
 	}
 
 })(jQuery); 
