@@ -2,13 +2,18 @@ Twister
 =========
 
 ねじれ天国( http://nejiten.wkeya.com/index.cgi )用のユーザースクリプトです。
+
 2014/2/23 ver 0.2 現在、説明書へのリンクにマウスを乗せると該当役職の説明がポップアップします。
 
 使い方
 ---------
 FireFox なら GreaseMonkey を、
+
 Google Chrome なら TamperMonkey をインストール後、
-[Twister.user.js](https://github.com/y-moriya/Twister/raw/master/twister.user.js) から本スクリプトをインストールしてください。
+
+[Twister.user.js](https://github.com/y-moriya/Twister/raw/master/twister.user.js)
+
+から本スクリプトをインストールしてください。
 
 License
 ---------
