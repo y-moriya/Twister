@@ -1,14 +1,14 @@
 Twister
 =========
 
-‚Ë‚¶‚ê“V‘(http://nejiten.wkeya.com/index.cgi)—p‚Ìƒ†[ƒU[ƒXƒNƒŠƒvƒg‚Å‚·B
-2014/2/23 ver 0.2 Œ»İAà–¾‘‚Ö‚ÌƒŠƒ“ƒN‚Éƒ}ƒEƒX‚ğæ‚¹‚é‚ÆŠY“––ğE‚Ìà–¾‚ªƒ|ƒbƒvƒAƒbƒv‚µ‚Ü‚·B
+ã­ã˜ã‚Œå¤©å›½( http://nejiten.wkeya.com/index.cgi )ç”¨ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚¹ã‚¯ãƒªãƒ—ãƒˆã§ã™ã€‚
+2014/2/23 ver 0.2 ç¾åœ¨ã€èª¬æ˜æ›¸ã¸ã®ãƒªãƒ³ã‚¯ã«ãƒã‚¦ã‚¹ã‚’ä¹—ã›ã‚‹ã¨è©²å½“å½¹è·ã®èª¬æ˜ãŒãƒãƒƒãƒ—ã‚¢ãƒƒãƒ—ã—ã¾ã™ã€‚
 
-g‚¢•û
+ä½¿ã„æ–¹
 ---------
-FireFox ‚È‚ç GreaseMonkey ‚ğA
-Google Chrome ‚È‚ç TamperMonkey ‚ğƒCƒ“ƒXƒg[ƒ‹ŒãA
-[Twister.user.js](https://github.com/y-moriya/Twister/raw/master/twister.user.js) ‚©‚ç–{ƒXƒNƒŠƒvƒg‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚­‚¾‚³‚¢B
+FireFox ãªã‚‰ GreaseMonkey ã‚’ã€
+Google Chrome ãªã‚‰ TamperMonkey ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€
+[Twister.user.js](https://github.com/y-moriya/Twister/raw/master/twister.user.js) ã‹ã‚‰æœ¬ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¦ãã ã•ã„ã€‚
 
 License
 ---------
