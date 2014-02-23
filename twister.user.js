@@ -83,7 +83,7 @@
 				var p = obj.parent();
 				p.find('a').remove();
 				p = $(p.html().replace(/<table(\n|.)+/, ''));
-				var d = $.trim(p.text()).replace(/\n/g, "<br>");
+				var d = $.trim(p.text().replace(/\n/g, "<br>"));
 				var html = "<div><h3>" + n + "</h3><p style=\"font-size: small;\">" + d + "</p></div>";
 				GM_setValue('docs_'+i, html);
 				i++;
