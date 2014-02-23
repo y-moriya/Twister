@@ -8,6 +8,8 @@ Twister
 
 2014/2/23 ver 0.2.1 現在、説明書へのリンクにマウスを乗せると該当役職の説明がポップアップします。
 
+![screen shot](https://github.com/y-moriya/Twister/raw/master/img/twister.jpg)
+
 使い方
 ---------
 FireFox なら GreaseMonkey を、
