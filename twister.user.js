@@ -10,12 +10,10 @@
 // ==/UserScript==
 
 (function twister($) {
-	var uri = GM_info.script.matches[0].replace('*', '');
-	
+	var uri = "http://nejiten.wkeya.com/index.cgi";
 	var raw = GM_getValue('docs_raw');
 	if (raw == null) {
 		loadDocs(uri);
-		parseDocs(raw);
 	} else {
 		if (location.href.match('vid')) {
 			showVersion();
@@ -49,6 +47,7 @@
 			.done(function(data) {
 				raw = data;
 				GM_setValue('docs_raw', raw);
+				parseDocs(raw);
 				alert('ロードが完了しました。')
 				twister($);
 				return;
