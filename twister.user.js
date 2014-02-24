@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Twister
 // @namespace   http://www.gunjobiyori.com/
-// @version     0.2.1
+// @version     0.2.2
 // @description ねじれ天国向け便利ツール群です。
 // @match       http://nejiten.wkeya.com/index.cgi*
 // @require     http://code.jquery.com/jquery-2.1.0.js
