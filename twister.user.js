@@ -4,8 +4,8 @@
 // @version     0.2.1
 // @description ねじれ天国向け便利ツール群です。
 // @match       http://nejiten.wkeya.com/index.cgi*
-// @require     http://code.jquery.com/jquery-2.1.0.min.js
-// @require     http://raw.github.com/urin/jquery.balloon.js/master/jquery.balloon.min.js
+// @require     http://code.jquery.com/jquery-2.1.0.js
+// @require     http://raw.github.com/urin/jquery.balloon.js/master/jquery.balloon.js
 // @copyright   2014+ Yu MORIYA
 // ==/UserScript==
 
