@@ -1,18 +1,14 @@
 Twister
 =========
 
-ねじれ天国( http://nejiten.wkeya.com/index.cgi )用のユーザースクリプトです。
+ねじれ天国( http://nejiten.halfmoon.jp/index.cgi )用のユーザースクリプト群です。
 
-現在 chrome では上手く動きません。。しばしお待ちを。
-
-→ver 0.2.2 にて解消されました。
+現在は文学ブロッカーの Block Literature のみ配布しています。
 
 機能
 ---------
 
-2014/2/23 ver 0.2.1 現在、説明書へのリンクにマウスを乗せると該当役職の説明がポップアップします。
-
-![screen shot](https://github.com/y-moriya/Twister/raw/master/img/twister.jpg)
+ねじれ天国にたまに投下される文学作品のような長文発言を短縮表示します。
 
 使い方
 ---------
@@ -20,7 +16,7 @@ FireFox なら GreaseMonkey を、
 
 Google Chrome なら TamperMonkey をインストール後、
 
-[Twister.user.js](https://github.com/y-moriya/Twister/raw/master/twister.user.js)
+[Literature.user.js](https://github.com/y-moriya/Twister/raw/master/literature.user.js)
 
 から本スクリプトをインストールしてください。
 
@@ -28,17 +24,18 @@ IE は 窓 から投げ捨ててください。
 
 注意書き
 --------
-
-利用する際は、個人設定の説明書表示は通常にしておくことを推奨します。（簡易だと若干おかしくなります）
-
-もし簡易設定のまま説明書をロードしてしまった場合は、設定変更後にどこか適当な村のURLを開き、ページ一番右上の cache reload をクリックすれば説明書をロードし直します。
+- [参考URL](http://nejiten.halfmoon.jp/index.cgi?vid=15085&type=watch&date=8) こちらのログで文学発言が短縮表示されていればインストールに成功しています。
+- 文学認定された発言は大声やAA発言が解除されてしまう不具合があります。
+- ソースコードの MAX_LENGTH を任意の数字に変更すると文学の判定文字数を変更できます。デフォルトは 800 になっています。
+- ねじれ天国サーバーからの取得を制限しているわけではないので、通信量は変わりません。
+- 遺言には対応していません……（こんなのあるのかよ）
 
 License
 ---------
 
 The MIT License
 
-Copyright (c) 2014+ Yu MORIYA
+Copyright (c) 2019 Yu MORIYA
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
