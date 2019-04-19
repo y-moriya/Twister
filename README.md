@@ -10,7 +10,7 @@ Twister
 
 ねじれ天国にたまに投下される文学作品のような長文発言を短縮表示します。
 
-![screen shot](https://github.com/y-moriya/Twister/raw/master/img/literature.jpg)
+<img src="https://github.com/y-moriya/Twister/raw/master/img/literature.jpg" width="400">
 
 使い方
 ---------
