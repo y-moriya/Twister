@@ -1,16 +1,19 @@
 // ==UserScript==
 // @name        Block Literature
 // @namespace   http://www.gunjobiyori.com/
-// @version     1.0.0
+// @version     1.0.1
 // @description ねじれ天国の文学対策スクリプトです。
 // @match       http://nejiten.halfmoon.jp/*
 // @copyright   2019 Yu MORIYA
 // ==/UserScript==
 
 (function(){
-	const MAX_LENGTH = 200;
-	const OPEN_MES = 'この発言は省略されています。続きを読むにはこちらをクリックしてください。';
-	const CLOSE_MES = '省略する';
+	// MAX_LENGTHの値を変更することで短縮する文字数の判定を変更できます。
+	const MAX_LENGTH = 800;
+
+	// 表示変更リンクのテキスト
+	const OPEN_MES = '▼全文表示';
+	const CLOSE_MES = '▲短縮表示';
 
 	function createOpenDiv(mes_num) {
 		let div = document.createElement('div');
@@ -85,6 +88,9 @@
 			// 全文表示から短縮表示に切り替える
 			msgdiv.style.display = 'none';
 			shortmsgdiv.style.display = 'inline';
+
+			// 短縮時に発言が詰まってしまうので元発言のトップにスクロール
+			shortmsgdiv.scrollIntoView(true);
 		} else {
 			// 短縮表示から全文表示に切り替える
 			shortmsgdiv.style.display = 'none';
