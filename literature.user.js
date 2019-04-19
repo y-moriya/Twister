@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name        Block Literature
 // @namespace   http://www.gunjobiyori.com/
+// @author      euro_s
 // @version     1.0.1
 // @description ねじれ天国の文学対策スクリプトです。
 // @match       http://nejiten.halfmoon.jp/*
