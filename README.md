@@ -5,7 +5,7 @@ Twister
 
 現在は文学ブロッカーの Block Literature および単独発言リンク取得の Get single log link を配布しています。
 
-### 文学ブロッカー Block Literature
+## 文学ブロッカー Block Literature
 
 機能
 ---------
@@ -34,7 +34,7 @@ IE は 窓 から投げ捨ててください。
 - ねじれ天国サーバーからの取得を制限しているわけではないので、通信量は変わりません。
 - 遺言には対応していません……（こんなのあるのかよ）
 
-### 単独発言リンク取得 Get single log link
+## 単独発言リンク取得 Get single log link
 
 機能
 ---------
