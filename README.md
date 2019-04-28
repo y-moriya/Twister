@@ -3,7 +3,9 @@ Twister
 
 ねじれ天国( http://nejiten.halfmoon.jp/index.cgi )用のユーザースクリプト群です。
 
-現在は文学ブロッカーの Block Literature のみ配布しています。
+現在は文学ブロッカーの Block Literature および単独発言リンク取得の Get single log link を配布しています。
+
+### 文学ブロッカー Block Literature
 
 機能
 ---------
@@ -31,6 +33,27 @@ IE は 窓 から投げ捨ててください。
 - ソースコードの MAX_LENGTH を任意の数字に変更すると文学の判定文字数を変更できます。デフォルトは 800 になっています。
 - ねじれ天国サーバーからの取得を制限しているわけではないので、通信量は変わりません。
 - 遺言には対応していません……（こんなのあるのかよ）
+
+### 単独発言リンク取得 Get single log link
+
+機能
+---------
+
+ねじれ天国の特定の発言のみ表示するリンクを発言の時刻に付与します。
+
+<img src="https://github.com/y-moriya/Twister/raw/master/img/getsingleloglink.jpg" width="800">
+
+使い方
+---------
+FireFox なら GreaseMonkey を、
+
+Google Chrome なら TamperMonkey をインストール後、
+
+[getsingleloglink.user.js](https://github.com/y-moriya/Twister/raw/master/getsingleloglink.user.js)
+
+から本スクリプトをインストールしてください。
+
+IE は 窓 から投げ捨ててください。
 
 License
 ---------
