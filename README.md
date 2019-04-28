@@ -5,6 +5,23 @@ Twister
 
 現在は文学ブロッカーの Block Literature および単独発言リンク取得の Get single log link を配布しています。
 
+インストール
+---------
+
+FireFox なら GreaseMonkey を、
+
+Google Chrome なら TamperMonkey をインストール後、
+
+[literature.user.js](https://github.com/y-moriya/Twister/raw/master/literature.user.js)
+
+または
+
+[getsingleloglink.user.js](https://github.com/y-moriya/Twister/raw/master/getsingleloglink.user.js)
+
+から使いたいスクリプトをインストールしてください。
+
+IE は 窓 から投げ捨ててください。
+
 ## 文学ブロッカー Block Literature
 
 機能
@@ -16,15 +33,8 @@ Twister
 
 使い方
 ---------
-FireFox なら GreaseMonkey を、
 
-Google Chrome なら TamperMonkey をインストール後、
-
-[literature.user.js](https://github.com/y-moriya/Twister/raw/master/literature.user.js)
-
-から本スクリプトをインストールしてください。
-
-IE は 窓 から投げ捨ててください。
+インストールすれば自動的に文学発言が短縮表示されます。
 
 注意書き
 --------
@@ -45,15 +55,10 @@ IE は 窓 から投げ捨ててください。
 
 使い方
 ---------
-FireFox なら GreaseMonkey を、
 
-Google Chrome なら TamperMonkey をインストール後、
+各発言の時刻が単独発言リンクになります。
 
-[getsingleloglink.user.js](https://github.com/y-moriya/Twister/raw/master/getsingleloglink.user.js)
-
-から本スクリプトをインストールしてください。
-
-IE は 窓 から投げ捨ててください。
+特定の発言のみをSNS等で共有したいときに使えます。
 
 License
 ---------
