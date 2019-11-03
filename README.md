@@ -3,22 +3,24 @@ Twister
 
 ねじれ天国( http://nejiten.halfmoon.jp/index.cgi )用のユーザースクリプト群です。
 
-現在は文学ブロッカーの Block Literature および単独発言リンク取得の Get single log link を配布しています。
+## 今あるもの
+
+- 文学ブロッカー Block Literature
+- 単独発言リンク取得 Get single log link
+- 語尾削除 Final Cutter
 
 インストール
 ---------
 
 FireFox なら GreaseMonkey を、
 
-Google Chrome なら TamperMonkey をインストール後、
+Google Chrome なら TamperMonkey をインストール後、以下から使いたいスクリプトをインストールしてください。
 
-[literature.user.js](https://github.com/y-moriya/Twister/raw/master/literature.user.js)
+- 文学ブロッカー [literature.user.js](https://github.com/y-moriya/Twister/raw/master/literature.user.js)
 
-または
+- 単独発言リンク取得 [getsingleloglink.user.js](https://github.com/y-moriya/Twister/raw/master/getsingleloglink.user.js)
 
-[getsingleloglink.user.js](https://github.com/y-moriya/Twister/raw/master/getsingleloglink.user.js)
-
-から使いたいスクリプトをインストールしてください。
+- 語尾削除 [finalcutter.user.js](https://github.com/y-moriya/Twister/raw/master/finalcutter.user.js)
 
 IE は 窓 から投げ捨ててください。
 
@@ -59,6 +61,18 @@ IE は 窓 から投げ捨ててください。
 各発言の時刻が単独発言リンクになります。
 
 特定の発言のみをSNS等で共有したいときに使えます。
+
+## 語尾削除 Final Cutter
+
+機能
+---------
+
+ねじれ天国の発言から語尾を削除します（簡易版）。
+
+使い方
+---------
+
+インストールすると文章中の「モイ」が削除されます。
 
 License
 ---------
