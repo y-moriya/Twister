@@ -4,7 +4,7 @@
 // @author      euro_s
 // @version     1.0
 // @description ねじれ天国の語尾削除スクリプト（簡易版）です。
-// @match       http://nejiten.halfmoon.jp/index.cgi?vid=16032
+// @match       http://nejiten.halfmoon.jp/index.cgi?vid=16032*
 // @grant       none
 // @copyright   2019 Yu MORIYA
 // ==/UserScript==
