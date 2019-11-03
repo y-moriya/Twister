@@ -16,7 +16,6 @@
 
 	let mes = document.querySelectorAll('[class$=body1]');
 	for (let i = 0; i < mes.length; i++) {
-        let msg = mes[i].innerText;
         mes[i].innerHTML = mes[i].innerHTML.replace(GOBI, '');
     }
 })();
