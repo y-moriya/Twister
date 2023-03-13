@@ -1,16 +1,34 @@
 (function() {
+  // 各機能ごとの有効フラグ。不要なものは true を false にすると無効になります。
+  const USE_BLK_LTR = true;    // 文学ブロッカー
+  const USE_ADJ_SEARCH = true; // 検索窓幅調整
+  const USE_RMV_SIDE = true;   // 左リスト畳み込み＆発言入力欄ズームなし
+  const USE_CFM_EXT = true;    // 村を出るボタンに確認ダイアログ追加
+  const USE_BLK_DBL = true;    // 発言ボタン2度押し抑止
+
   // BLK_MAX_LENGTH 以上の文字数を短縮表示する
-  BLK_MAX_LENGTH = 800;
+  const BLK_MAX_LENGTH = 800;
 
   const url = window.location.href;
   if (!url.match(/nejiten\.halfmoon\.jp\/index\.cgi\?vid=/)) {
     return;
   }
 
-  blockLiterature();
-  adjustSearchBox();
-  removeSidebar();
-  confirmExit();
+  if (USE_BLK_LTR) {
+    blockLiterature();
+  }
+  if (USE_ADJ_SEARCH) {
+    adjustSearchBox();
+  }
+  if (USE_RMV_SIDE) {
+    removeSidebar();
+  }
+  if (USE_CFM_EXT) {
+    confirmExit();
+  }
+  if (USE_BLK_DBL) {
+    disableSubmit();
+  }
 
   // 文学ブロッカー
   function blockLiterature() {
@@ -20,7 +38,7 @@
 
     function createOpenDiv(mes_num) {
       let div = document.createElement('div');
-          div.style.color = 'blue';
+      div.style.color = 'blue';
       let a = document.createElement('a')
       a.id = 'open' + mes_num;
       a.innerText = OPEN_MES;
@@ -165,5 +183,19 @@
         }
       };
     }
+  }
+
+  // 発言ボタン2度押し防止
+  function disableSubmit() {
+    let forms = Array.from(document.querySelectorAll('form'));
+    let btn = Array.from(document.querySelectorAll('input[type="submit"]'));
+    
+    forms.forEach((form) => {
+        form.onsubmit = () => {
+            btn.forEach((b) => {
+                b.disabled = true;
+            })
+        }
+    });
   }
 })();
